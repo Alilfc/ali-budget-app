@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Budget</title>
+  <link rel="manifest" href="/ali-budget/manifest.json">
+  <meta name="theme-color" content="#d4af37">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register("/ali-budget/service-worker.js").then(() => {
+        console.log("✅ Service Worker Registered");
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1 style="text-align:center;">🚀 Ali Budget</h1>
+  <p style="text-align:center;">PWA جاهز للتثبيت من Safari</p>
+</body>
+</html>
